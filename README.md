@@ -237,3 +237,13 @@ It reduces the blast radius of compromised keys
 > 
 > **without starting tomorrow’s ideological war.**
 >
+## What VEC is NOT
+
+- Not a wallet
+- Not an account abstraction framework
+- Not a policy engine
+- Not a replacement for smart accounts
+
+VEC is a minimal abstraction that separates
+*execution authority* from *key ownership*
+for high-value protocol interactions.
