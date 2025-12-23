@@ -247,3 +247,55 @@ It reduces the blast radius of compromised keys
 VEC is a minimal abstraction that separates
 *execution authority* from *key ownership*
 for high-value protocol interactions.
+Known Limitations
+
+VEC intentionally remains minimal and does not attempt to solve every wallet or protocol security problem.
+The following limitations are explicit design trade-offs, not oversights.
+
+1. Raw EOA Transfers Are Not Prevented
+
+VEC does not restrict native ETH or NFT transfers directly from an EOA.
+If a seed is compromised, arbitrary transfers remain theoretically possible.
+
+Mitigation is practical, not protocol-level:
+	•	Keep minimal balances on identity / staking EOAs
+	•	Store value behind vaults or context-controlled contracts
+
+⸻
+
+2. Opt-in Can Become Socially Expected
+
+Although VEC is fully voluntary, protocols or communities may gradually expect its usage.
+This creates a social-layer risk, not a technical one.
+
+VEC deliberately avoids protocol-level mandates to minimize this pressure.
+
+⸻
+
+3. UX Complexity Is Shifted, Not Eliminated
+
+VEC reduces blast radius but introduces:
+	•	Additional signing flows
+	•	Context configuration decisions
+	•	Guardian and delay management
+
+This is an intentional trade-off:
+safety over simplicity for high-value actions.
+
+⸻
+
+4. Risk of False Sense of Security
+
+VEC separates execution authority but does not guarantee:
+	•	Context contract correctness
+	•	Guardian reliability
+	•	Proper user configuration
+
+Context safety remains the user’s responsibility.
+
+⸻
+
+5. Not a Universal Standard
+
+VEC requires explicit protocol-side integration.
+Until adoption spreads, protection only applies where it is deliberately supported.
