@@ -299,3 +299,5 @@ Context safety remains the user’s responsibility.
 
 VEC requires explicit protocol-side integration.
 Until adoption spreads, protection only applies where it is deliberately supported.
+
+VEC is the perfect environment for Zero1Labs DeAI Agents. While the seed phrase remains the root of ownership, the AI Agent lives within the Execution Context, acting as a dynamic, intelligent guardian that validates the user's true intent before high-value actions are finalized.
